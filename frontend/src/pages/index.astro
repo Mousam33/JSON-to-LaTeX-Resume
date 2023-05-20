@@ -1,0 +1,22 @@
+---
+import ResumeMain from "../components/ResumeMain.jsx";
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>TexResume</title>
+	</head>
+	<body id="root">
+		<>
+			<nav class="h-14 bg-blue-900">
+				<h1 class="text-white text-center select-none text-2xl font-thin pt-3">Make Your Free Latex Résumé</h1>
+			</nav>
+			<div class="flex flex-row justify-center pt-5">
+				<ResumeMain client:load />
+			</div>
+		</>
+	</body>
+</html>
